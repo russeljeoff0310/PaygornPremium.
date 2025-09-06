@@ -96,17 +96,29 @@ input{
 #container button{
   height: 70px;
   width: 70px;
-  background-color: grey;
-  border-radius: 50px;
+  border-radius: 50%;
   border: none;
+  background-color: grey;
   color: white;
   font-size: 2rem;
 }
-.operator-btn{
+#container button:active{
+  background-color: antiquewhite;
+}
+#container .operator-btn{
   background-color: hsl( 33, 100%, 55%);
 }
-
-
+@media(min-width: 700px){
+  input{
+    padding: 90px;
+    font-size: 7rem;
+  }
+  #container button{
+    font-size: 4rem;
+    height: 200px;
+    width: 200px;
+  }
+}
 
 
 
