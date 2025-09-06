@@ -1,0 +1,119 @@
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/*Counter Program*/
+.counterPro{
+  background-color: cyan;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+#countLabel{
+  font-size: 130px;
+}
+#btnContainer{
+  @media(max-width: 600px){
+    display: flex;
+    
+  }
+}
+#btnContainer button{
+  font-size: 50px;
+  padding: 25px;
+  margin: 0px 10px;
+  border-radius: 25px;
+  border: none;
+@media(max-width: 600px){
+  font-size: 25px;
+}
+}
+#decreaseBtn {
+  background-color: yellow;
+}
+#decreaseBtn:active {
+  background-color: #ffff90;
+}
+#resetBtn {
+  background-color: red;
+}
+#resetBtn:active {
+  background-color: #ff6666;
+}
+#increaseBtn {
+  background-color: green;
+}
+
+#increaseBtn:active {
+  background-color: #00993A; 
+}
+
+
+/*Clock*/
+#clockContainer{
+  height: 400px;
+  width: 100%;
+  background-color: #CA2CE3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#clock{
+  font-size: 100px;
+}
+
+
+/*calculator*/
+#container{
+  background-color: hsl( 0, 0%,8%);
+  max-width: 100%;
+  overflow: hidden;
+  border: 2px solid black;
+  
+}
+input{
+  width: 100%;
+  padding: 35px;
+  box-sizing: border-box;
+  background-color: hsl( 0, 0%, 15%);
+  border: none;
+  color: white;
+  font-size: 3rem;
+  text-align: right;
+}
+#btn{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+
+}
+#container button{
+  height: 70px;
+  width: 70px;
+  background-color: grey;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+.operator-btn{
+  background-color: hsl( 33, 100%, 55%);
+}
+
+
+
+
+
+footer{
+  background-color: #761836;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #B8A4AA;
+}
